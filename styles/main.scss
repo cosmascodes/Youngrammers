@@ -47,9 +47,9 @@ header{
         display: flex;
     }
     nav{
-        background-image: linear-gradient(#20bd67, #e4e4e4e5);
         display: flex;
         @include mobile {
+            background-image: linear-gradient(#20bd67, #e4e4e4e5);
             display: none;
             position: absolute;
             width: 100%;
