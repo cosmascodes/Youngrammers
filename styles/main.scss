@@ -43,24 +43,49 @@ header{
     img{
         height: 100%;
     }
+    .on{
+        display: flex;
+    }
     nav{
-        display: none;
-        @include desktop {
-            display: flex;
+        background-image: linear-gradient(#20bd67, #e4e4e4e5);
+        display: flex;
+        @include mobile {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            right: 0;
+            top: 100%;
+            justify-content: center;
         }
         ul{
             display: flex;
+            @include mobile {
+                flex-direction: column;
+                width: 80%;
+                height: fit-content;
+                background-color: #fff;
+                text-align: center;
+                padding: 1.2em 0;
+                border-radius: .5rem;
+                margin-top: 4rem;
+            }
             li{
                 font-size: .6em;
                 padding: 0 .4rem;
                 font-weight: 800;
                 cursor: pointer;
+                @include mobile {
+                    padding: 10px;
+                    margin: 10px 0;
+                    font-size: 1rem;
+                }
             }
         }
     }
     #nav-bar{
         position: relative;
-        width: 20px;
+        width: 24px;
         height: 3px;
         background-color: $themeColor;
         border-radius: 20px;
@@ -74,13 +99,12 @@ header{
             content: '';
             right: 0;
             border-radius: 20px;
+            width: 20px;
         }
         &:before{
-            width: 24px;
             bottom: 7px;
         }
         &:after{
-            width: 16px;
             top: 7px;
         }
     }
