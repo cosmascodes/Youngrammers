@@ -6,6 +6,7 @@
     <title>Youngrammers - Best Web and Mobile developers</title>
     <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -39,10 +40,10 @@
             <div class="team-text">
                 <img src="assets/Team.png" alt="team">
                 <div>
-                    <p class="first-p">
+                    <p class="first-p" data-aos="slide-up" data-aos-duration="400">
                         We are fans of digital, geeks by nature, addicted to social networks and completely crazy about designs.
                     </p>
-                    <p>
+                    <p data-aos="slide-up" data-aos-duration="400">
                         Our sharp-minded team mobilises creative, technical and fine strategists profiles to support you in the wildest projects.
                     </p>
                 </div>
@@ -90,7 +91,7 @@
             <div>
                 <img src="assets/aboutus.png" alt="about us">
 
-                    <p>
+                    <p data-aos="slide-up" data-aos-duration="400">
                         Youngrammers is a creative agency dealing with the 
                         designing and building of websites, web applications
                         and mobile applications.
@@ -109,18 +110,18 @@
                     <a style="opacity: 0; visibility: hidden;" href='https://www.free-counters.org/'>counters</a> 
                 </div>
                 <div class="location">
-                    <h2>OUR CONTACTS</h2>
-                    <h3>WRITE US VIA E-MAIL</h3>
-                    <p>info@youngrammers.devs</p>
+                    <h2 data-aos="slide-up" data-aos-duration="400">OUR CONTACTS</h2>
+                    <h3 data-aos="slide-up" data-aos-duration="400">WRITE US VIA E-MAIL</h3>
+                    <p data-aos="slide-up" data-aos-duration="400">info@youngrammers.devs</p>
 
-                    <h3>VISIT US</h3>
-                    <p>
+                    <h3 data-aos="slide-up" data-aos-duration="400">VISIT US</h3>
+                    <p data-aos="slide-up" data-aos-duration="400">
                         3rd Floor, Blue Violet Plaza<br/>
                         Kamburu Road Off Ngong' Road
                     </p>
 
-                    <h3>PHONE US</h3>
-                    <p>+(254)704246130 or +(254)700648222</p>
+                    <h3 data-aos="slide-up" data-aos-duration="400">PHONE US</h3>
+                    <p data-aos="slide-up" data-aos-duration="400">+(254)704246130 or +(254)700648222</p>
 
                 </div>
             </div>
@@ -129,6 +130,13 @@
         </section>
 
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in',
+            once: true
+        });
+    </script>
     <script src="js/navBar.js" defer></script>
     <script src="js/scroll.js" defer></script>
     <script type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=33943ce898017dcb06acecac5512ad3863349f19' defer></script>
